@@ -1,0 +1,31 @@
+{
+    "name": "express-api-intro",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "type": "module",
+    "scripts": {
+        "dev": "nodemon --experimental-specifier-resolution=node app.js",
+        "format:fix": "prettier --write .",
+        "lint:fix": "eslint --fix .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Alexis Gadbin",
+    "license": "ISC",
+    "dependencies": {
+        "@prisma/client": "^4.15.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.1.4",
+        "express": "^4.18.2",
+        "nodemon": "^2.0.22",
+        "prisma": "^4.15.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.42.0",
+        "eslint-config-prettier": "^8.8.0",
+        "prettier": "^2.8.8"
+    },
+    "prisma": {
+        "seed": "node prisma/seed.js"
+    }
+}
